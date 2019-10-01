@@ -2,12 +2,6 @@
 spring:
   application:
     name: servicios-web
-  jpa:
-    database: juancadavid
-  datasource:
-    platform: postgres
-    url: jdbc:postgresql://localhost:5432/juancadavid
-    data-username:  root
 server:
   port: 9000
   servlet:

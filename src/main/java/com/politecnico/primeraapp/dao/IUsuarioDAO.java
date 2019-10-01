@@ -1,10 +1,11 @@
 package com.politecnico.primeraapp.dao;
 
-import com.politecnico.primeraapp.domain.UsuarioEntity;
+import com.politecnico.primeraapp.domain.Usuario;
 
 import java.util.List;
 
 
 public interface IUsuarioDAO {
-    List<UsuarioEntity> listarUsuarios();
+    List<Usuario> listarUsuarios();
+    Usuario agregarUsuario(Usuario usuario);
 }

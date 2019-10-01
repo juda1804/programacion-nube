@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import java.util.Objects;
 
-public class UsuarioEntity {
+public class Usuario {
 
 
     @Getter
@@ -27,10 +27,10 @@ public class UsuarioEntity {
     @Setter
     private boolean estado;
 
-    public UsuarioEntity() {
+    public Usuario() {
     }
 
-    public UsuarioEntity(String cedula, String nombres, String apellidos, boolean estado) {
+    public Usuario(String cedula, String nombres, String apellidos, boolean estado) {
         this.cedula = cedula;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -41,7 +41,7 @@ public class UsuarioEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        UsuarioEntity that = (UsuarioEntity) o;
+        Usuario that = (Usuario) o;
         return Objects.equals(cedula, that.cedula);
     }
 
